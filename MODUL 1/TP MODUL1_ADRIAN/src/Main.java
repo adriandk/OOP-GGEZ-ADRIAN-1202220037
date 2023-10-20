@@ -3,9 +3,9 @@ import java.util.ArrayList;
 public class Main {
     public static void main(String[] args) throws Exception {
         Bank bank = new Bank();
-        Account accountOne = new Account("Adrian_SI-46-01", 1202220035, 500001.5);
-        Account accountTwo = new Account("Adrian_SI-46-02", 1202220036, 500002.8);
-        Account accountThree = new Account("Adrian_SI-46-03", 1202220037, 500003.1);
+        Account accountOne = new Account("Adrian_SI4601", 1202220035, 500001.5);
+        Account accountTwo = new Account("Adrian_SI4602", 1202220036, 500002.8);
+        Account accountThree = new Account("Adrian_SI4603", 1202220037, 500003.1);
 
         bank.AddAccount(accountOne);
         bank.AddAccount(accountTwo);
