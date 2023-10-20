@@ -1,16 +1,37 @@
 public class Account {
 
-    private String Name;
+    private String accountName;
     private int accountNumber;
-    private int accountBalance;
+    private double accountBalance;
 
-    public void deposit(){
-
+    public Account(String name, int number, double balance){
+        this.accountName = name;
+        this.accountNumber = number;
+        this.accountBalance = balance;
     }
 
-    public boolean withdraw(){
+    public String getAccountName() {
+        return this.accountName;
+    }
 
-        
-        return true;
+    public int getAccountNumber() {
+        return this.accountNumber;
+    }
+
+    public double getAccountBalance() {
+        return this.accountBalance;
+    }
+
+    public void deposit(double depositBalance){
+        this.accountBalance += depositBalance;
+    }
+
+    public boolean withdraw(double withdrawBalance){       
+        if(this.accountBalance > withdrawBalance){
+            this.accountBalance -= withdrawBalance;
+            return true;
+        } else {
+            return false;
+        }
     }
 }
