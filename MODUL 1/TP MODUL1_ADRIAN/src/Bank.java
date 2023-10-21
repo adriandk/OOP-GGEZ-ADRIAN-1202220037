@@ -8,15 +8,6 @@ public class Bank {
         bankAccount.add(newAccount);
     }
 
-    public void RemoveAccount(String accountName) {
-        for (Account account : bankAccount){
-            if (account.getAccountName().equals(accountName)) {
-                bankAccount.remove(account);
-                break;
-            }
-        }
-    }
-
     public Account GetAccount(String accountName) {
         for (Account account : bankAccount){
             if (account.getAccountName().equals(accountName)) {
@@ -24,6 +15,15 @@ public class Bank {
             }
         }
         return null;
+    }
+
+    public void RemoveAccount(String accountName) {
+        for (Account account : bankAccount){
+            if (account.getAccountName().equals(accountName)) {
+                bankAccount.remove(account);
+                break;
+            }
+        }
     }
 
     public ArrayList<Account> GetAllAccount() {

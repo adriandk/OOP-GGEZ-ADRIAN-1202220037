@@ -11,9 +11,9 @@ public class Main {
         bank.AddAccount(accountTwo);
         bank.AddAccount(accountThree);
 
-        Account checkBalanceAccountOne = bank.GetAccount("Adrian_SI-46-01");
-        Account checkBalanceAccountTwo = bank.GetAccount("Adrian_SI-46-02");
-        Account checkBalanceAccountThree = bank.GetAccount("Adrian_SI-46-03");
+        Account checkBalanceAccountOne = bank.GetAccount("Adrian_SI4601");
+        Account checkBalanceAccountTwo = bank.GetAccount("Adrian_SI4602");
+        Account checkBalanceAccountThree = bank.GetAccount("Adrian_SI4603");
         
         System.out.println("Saldo Akun " + checkBalanceAccountOne.getAccountName() + " : " + checkBalanceAccountOne.getAccountBalance());
         System.out.println("Saldo Akun " + checkBalanceAccountTwo.getAccountName() + " : " + checkBalanceAccountTwo.getAccountBalance());
@@ -25,10 +25,10 @@ public class Main {
         accountThree.withdraw(5000);
         System.out.println("Saldo Akun " + checkBalanceAccountThree.getAccountName() + " setelah menarik uang : Rp " +checkBalanceAccountThree.getAccountBalance());
 
-        bank.RemoveAccount("Adrian_SI-46-02");
+        bank.RemoveAccount("Adrian_SI4602");
         System.out.println("\nAkun " + checkBalanceAccountTwo.getAccountName() + " Berhasil dihapus!\n");
 
-        System.out.println("Daftar Semua Akun dalam Bank");
+        System.out.println("Daftar Semua Akun dalam Bank : \n");
         ArrayList<Account> listAccount = bank.GetAllAccount();
         for (Account account : listAccount){
             System.out.print("Nama : " + account.getAccountName() + ", ");

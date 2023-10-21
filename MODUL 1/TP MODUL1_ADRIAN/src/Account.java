@@ -23,12 +23,12 @@ public class Account {
     }
 
     public void deposit(double depositBalance){
-        this.accountBalance += depositBalance;
+        this.accountBalance = accountBalance - depositBalance;
     }
 
-    public boolean withdraw(double withdrawBalance){       
+    public boolean withdraw(double withdrawBalance){      
         if(this.accountBalance > withdrawBalance){
-            this.accountBalance -= withdrawBalance;
+            this.accountBalance = accountBalance - withdrawBalance;
             return true;
         } else {
             return false;
