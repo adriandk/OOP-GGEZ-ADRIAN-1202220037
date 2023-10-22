@@ -28,7 +28,7 @@ public class Account {
 
     public boolean withdraw(double withdrawBalance){  
         boolean returnType;    
-        if(this.accountBalance > withdrawBalance){
+        if(this.accountBalance >= withdrawBalance){
             this.accountBalance = accountBalance - withdrawBalance;
             returnType = true;
         } else {
