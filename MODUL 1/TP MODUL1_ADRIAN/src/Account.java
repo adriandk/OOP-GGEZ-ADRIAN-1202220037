@@ -26,12 +26,14 @@ public class Account {
         this.accountBalance = accountBalance - depositBalance;
     }
 
-    public boolean withdraw(double withdrawBalance){      
+    public boolean withdraw(double withdrawBalance){  
+        boolean returnType;    
         if(this.accountBalance > withdrawBalance){
             this.accountBalance = accountBalance - withdrawBalance;
-            return true;
+            returnType = true;
         } else {
-            return false;
+            returnType = false;
         }
+        return returnType;
     }
 }
