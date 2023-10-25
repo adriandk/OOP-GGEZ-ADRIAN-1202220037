@@ -40,7 +40,6 @@ public class App {
             int pilihan = scanner.nextInt();
             
             if(pilihan == 1){
-                x = 2;
                 database.showKonser();
             } else if(pilihan == 2){
                 System.out.print("Pilih nomor konser : ");
@@ -48,7 +47,6 @@ public class App {
                 System.out.print("Jumlah Tiket : ");
                 int jumlahTiket = scanner.nextInt();
                 database.buyTikect(nomorKonser, jumlahTiket);
-                x = 2;
             } else if(pilihan == 3){
                 System.out.println("Keluar");
                 break;
