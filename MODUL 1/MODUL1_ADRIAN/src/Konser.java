@@ -2,14 +2,15 @@ public class Konser {
     // TODO: Create Private Attribute of Konser (Band Name, Date, Location, Ticket Price) then Create Setter and Getter
     
     private String bandName, tanggal, lokasi;
-    private int hargaTikect;
+    private int hargaTiket;
 
-    public Konser(String bandName, String tanggal, String lokasi, int hargaTikect) {
+    public Konser(String bandName, String tanggal, String lokasi, int hargaTiket) {
         this.bandName = bandName;
         this.tanggal = tanggal;
         this.lokasi = lokasi;
-        this.hargaTikect = hargaTikect;
+        this.hargaTiket = hargaTiket;
     }
+
     public String getBandName() {
         return bandName;
     }
@@ -28,11 +29,11 @@ public class Konser {
     public void setLokasi(String lokasi) {
         this.lokasi = lokasi;
     }
-    public int getHargaTikect() {
-        return hargaTikect;
+    public int getHargaTiket() {
+        return hargaTiket;
     }
-    public void setHargaTikect(int hargaTikect) {
-        this.hargaTikect = hargaTikect;
+    public void setHargaTiket(int hargaTiket) {
+        this.hargaTiket = hargaTiket;
     }
     
 

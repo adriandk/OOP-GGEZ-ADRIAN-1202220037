@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class App {
+
     public static void main(String[] args){
 
         Scanner scanner = new Scanner(System.in);
@@ -30,7 +31,7 @@ public class App {
         // TODO: Display Main Menu and Prompt User to Choose Menu
         System.out.println("====================================");
         int x = 2;
-        for(int i = 0; i < x; i++){
+        for(int i = 0; i < x; i+=0){
             System.out.println("1. Lihat Konser");
             System.out.println("2. Beli Tiket");
             System.out.println("3. Keluar");
@@ -43,16 +44,15 @@ public class App {
                 database.showKonser();
             } else if(pilihan == 2){
                 System.out.print("Pilih nomor konser : ");
-                int nomorKonser = scanner.nextInt();
+                int nomorKonser = scanner.nextInt() - 1;
                 System.out.print("Jumlah Tiket : ");
                 int jumlahTiket = scanner.nextInt();
-                x = 2;
                 database.buyTikect(nomorKonser, jumlahTiket);
+                x = 2;
             } else if(pilihan == 3){
                 System.out.println("Keluar");
                 break;
             }
         }
-
     }
 }

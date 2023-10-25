@@ -16,13 +16,20 @@ public class Database {
             System.out.println(konser.getBandName());
             System.out.println("Tanggal Konser : " + konser.getTanggal());
             System.out.println("Lokasi : " + konser.getLokasi());
-            System.out.println("Harga tiket : " + konser.getHargaTikect());
+            System.out.println("Harga tiket : " + konser.getHargaTiket());
             System.out.println();
         }
     }
 
     // TODO: Create Method to Buy Ticket and Show the Total Price
     public void buyTikect(int tiket, int jumlah){
+        if(tiket <= konserList.size()){
+            int a = konserList.get(tiket).getHargaTiket();
+            a = a * jumlah;
+            System.out.println("Total : " + a);
+        } else{
+            System.out.println("Tidak ada");
+        }
     }
 
 }
