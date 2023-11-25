@@ -1,6 +1,11 @@
 public class Bus extends Kendaraan{
 
-    int jumlahPintu;
+    private int jumlahPintu;
+
+    public Bus(String nomorIdentifikasi, double kecepatanMaksimum, int kapasistasPenumpang) {
+        super(nomorIdentifikasi, kecepatanMaksimum, kapasistasPenumpang);
+        this.jumlahPintu = 0;
+    }
 
     public Bus(String nomorIdentifikasi, double kecepatanMaksimum, int kapasistasPenumpang, int jumlahPintu) {
         super(nomorIdentifikasi, kecepatanMaksimum, kapasistasPenumpang);

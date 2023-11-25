@@ -1,6 +1,11 @@
 public class Mobil extends Kendaraan {
     
-    int jumlahPintu;
+    private int jumlahPintu;
+
+    public Mobil(String nomorIdentifikasi, double kecepatanMaksimum, int kapasistasPenumpang) {
+        super(nomorIdentifikasi, kecepatanMaksimum, kapasistasPenumpang);
+        this.jumlahPintu = 0;
+    }
 
     public Mobil(String nomorIdentifikasi, double kecepatanMaksimum, int kapasistasPenumpang, int jumlahPintu) {
         super(nomorIdentifikasi, kecepatanMaksimum, kapasistasPenumpang);
