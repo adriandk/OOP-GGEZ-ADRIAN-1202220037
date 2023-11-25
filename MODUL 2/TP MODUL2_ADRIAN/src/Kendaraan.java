@@ -9,9 +9,13 @@ public class Kendaraan {
         this.kecepatanMaksimum = kecepatanMaksimum;
         this.kapasistasPenumpang = kapasistasPenumpang;
     }
-    
+
     public String toString(){
-        return "true";
+        String returnString = "Nomor Identifikasi : " + nomorIdentifikasi + "\n"
+        + "Kecepatan Maksimum : " + kecepatanMaksimum + "\n"
+        + "Kapasitas Penumpang : " + kapasistasPenumpang + "\n";
+        
+        return returnString;
     }
 
     public double hitungWaktuTempuh(double jarak){

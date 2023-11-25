@@ -5,6 +5,7 @@ public class App {
         Mobil mobilSatu = new Mobil("MOB1", 200, 4, 4);
 
         System.out.println("Informasi Bus : ");
+        
         System.out.println(busSatu.toString());
         System.out.println("Waktu tempuh dengan bus " + busSatu.nomorIdentifikasi + " : " + busSatu.hitungWaktuTempuh(48) + "\n");
 

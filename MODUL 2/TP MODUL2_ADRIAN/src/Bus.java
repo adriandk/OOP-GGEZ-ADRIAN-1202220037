@@ -9,13 +9,8 @@ public class Bus extends Kendaraan{
 
     @Override
     public String toString(){
-
-        String returnString = "Nomor Identifikasi : " + nomorIdentifikasi + "\n"
-        + "Kecepatan Maksimum : " + kecepatanMaksimum + "\n"
-        + "Kapasitas Penumpang : " + kapasistasPenumpang + "\n"
-        + "Jumlah Pintu : " + jumlahPintu + "\n";
-
-        return returnString;
+        String returnString = "Jumlah Pintu : " + jumlahPintu + "\n";
+        return super.toString() + returnString;
     }
 
 }
