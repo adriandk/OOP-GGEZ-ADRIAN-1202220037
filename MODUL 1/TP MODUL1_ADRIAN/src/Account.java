@@ -23,7 +23,7 @@ public class Account {
     }
 
     public void deposit(double depositBalance){
-        this.accountBalance = accountBalance - depositBalance;
+        this.accountBalance = this.accountBalance + depositBalance;
     }
 
     public boolean withdraw(double withdrawBalance){  
