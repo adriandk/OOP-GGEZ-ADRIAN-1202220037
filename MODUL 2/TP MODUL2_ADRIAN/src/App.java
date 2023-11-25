@@ -3,7 +3,7 @@ public class App {
         
         Bus busSatu = new Bus("BUS1", 120, 50, 2);
         Mobil mobilSatu = new Mobil("MOB1", 200, 4, 4);
-
+        
         System.out.println("Informasi Bus : ");
         
         System.out.println(busSatu.toString());
