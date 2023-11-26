@@ -12,6 +12,5 @@ public class App {
         System.out.println("Informasi Mobil : ");
         System.out.println(mobilSatu.toString());
         System.out.println("Waktu tempuh dengan mobil " + mobilSatu.nomorIdentifikasi + " : " + mobilSatu.hitungWaktuTempuh(50));
-        System.out.println();
     }
 }
