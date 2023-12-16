@@ -9,12 +9,12 @@ public class Student extends User {
     }
     
     public void enrollCourse(String course){
-        
+        System.out.println("Enrolled Courses : " + enrolledCourse);
     }
 
     @Override
     public String getUserDetail(){
-        return "a";
+        return "Student - Name : " + this.name + ", " + this.ID;
     }
 
 }

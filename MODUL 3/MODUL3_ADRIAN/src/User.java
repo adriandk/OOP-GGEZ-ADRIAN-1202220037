@@ -8,6 +8,6 @@ public class User {
     }
 
     public String getUserDetail(){
-        return "a";
+        return "Name - ID : " + this.name + ", " + this.ID;
     }
 }

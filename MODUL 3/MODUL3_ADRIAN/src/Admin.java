@@ -5,12 +5,12 @@ public class Admin extends User {
     }
 
     public void manageSystem(String course){
-        
+        System.out.println(name + " is managing the " + course);
     }
 
     @Override
     public String getUserDetail(){
-        return "a";
+        return "Admin - Name : " + this.name + ", " + this.ID;
     }
 
     
