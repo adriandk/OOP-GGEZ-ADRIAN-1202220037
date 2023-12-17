@@ -9,6 +9,12 @@ public class Main {
         int studentID = 0;
         ArrayList<String> enrolledCourse = new ArrayList<String>();
 
+        String[] coursesList = {"Statistika Industri", "Pemodelan Proses Bisnis"};
+        String[] courseID = {"101", "102"};
+        String[][] students = {
+            {"Harris", "Metta"}, 
+            {"Windy", "Amalia"}};
+
         System.out.print("Enter student name : ");
         String studentName = input.nextLine();
 
@@ -26,16 +32,18 @@ public class Main {
 
         System.out.println("Enter courses to enroll in (separated by comma) : ");
         String courses = scan.nextLine();
+        System.out.println();
 
-        System.out.println("\nCourse ID : 101, ");
-        System.out.println("Course Name : Statistika Industri");
-        System.out.println(" - Student : Harris");
-        System.out.println(" - Student : Metta");
+        for(int i = 0; i < coursesList.length; i++){
+            System.out.println("Course ID : " + courseID[i] + ", ");
+            
+            System.out.println("Course Name : " + coursesList[i]);
 
-        System.out.println("\nCourse ID : 102,");
-        System.out.println("Course Name : Pemodelan Proses Bisnis");
-        System.out.println(" - Student : Windy");
-        System.out.println(" - Student : Amalia\n");
+            for(int y = 0; y < students[i].length; y++) {
+                System.out.println(" - Student : " + students[i][y]);
+            }
+            System.out.println();
+        }
 
         String[] course = courses.split(",");
         for(String enrollCourse : course){
