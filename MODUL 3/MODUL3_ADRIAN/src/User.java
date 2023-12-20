@@ -6,6 +6,7 @@ public class User {
    private String nama, noHandPhone;
    
    public User() {}
+   
    public void setName(String nama) {
       this.nama = nama;
    }

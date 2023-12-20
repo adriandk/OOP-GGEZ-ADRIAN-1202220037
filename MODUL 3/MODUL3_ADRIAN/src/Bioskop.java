@@ -1,5 +1,7 @@
 public class Bioskop {
     
+    boolean isBooked;
+
     // TO DO: Create Private Attributes of rows and assign rows to 5
     private int rows = 5;
     
@@ -17,16 +19,16 @@ public class Bioskop {
             }
         }
         seats[0][1] = 1;
-        seats[1][1] = 1;
-        seats[4][1] = 1;
-        seats[0][1] = 1;
+        seats[1][9] = 1;
+        seats[4][5] = 1;
+        seats[2][1] = 1;
     }
 
     //  TO DO: Add a method to display the seat layout
     public void displaySeating() {
         for(int i = 0 ; i < rows ; i++){
             for(int x = 0 ; x < seatPerRows ; x++){
-                System.out.print(seats[i][x]);
+                System.out.print(seats[i][x] + "\t");
             }
             System.out.println();
         }
@@ -35,9 +37,16 @@ public class Bioskop {
     //  TO DO: Add a method to reserve seats
     public void bookSeat(int row, int seat) {
         if (seats[row][seat] == 0) {
+            seats[row][seat] = 1;
             System.out.println("Kuris berhasil dipesan " + row + ", " + seat);
+            isBooked = true;
         } else {
             System.out.println("Error " + row + ", " + seat + " sudah dipesan");
+            isBooked = false;
         }
+    }
+
+    public boolean bookedStatus(){
+        return isBooked;
     }
 }
