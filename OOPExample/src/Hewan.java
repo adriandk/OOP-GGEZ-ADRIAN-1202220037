@@ -11,4 +11,9 @@ public class Hewan {
         this.makanan = jenisMakanan;
         this.nama = namaHewan;
     }
+
+    public void suara(){
+        System.out.println("Hewan ini bersuara....");
+    }
+
 }

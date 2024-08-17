@@ -13,4 +13,9 @@ public class Ikan extends Hewan {
         System.out.println("============================");
     }
 
+    @Override
+    public void suara() {
+        System.out.println(this.nama + " tidak bersuara");
+    }
+
 }

@@ -13,4 +13,9 @@ public class Burung extends Hewan{
         System.out.println("============================");
     }
     
+    @Override
+    public void suara() {
+        System.out.println(this.nama + " berkicau");
+    }
+
 }
