@@ -1,14 +1,15 @@
 public class Konser {
     // TODO: Create Private Attribute of Konser (Band Name, Date, Location, Ticket Price) then Create Setter and Getter
     
-    private String bandName, tanggal, lokasi;
+    private String bandName, tanggal, lokasi, namaVokalis;
     private int hargaTiket;
 
-    public Konser(String bandName, String tanggal, String lokasi, int hargaTiket) {
+    public Konser(String bandName, String tanggal, String lokasi, int hargaTiket, String namaVokalis) {
         this.bandName = bandName;
         this.tanggal = tanggal;
         this.lokasi = lokasi;
         this.hargaTiket = hargaTiket;
+        this.namaVokalis = namaVokalis;
     }
 
     public String getBandName() {

@@ -1,0 +1,7 @@
+konserSatu = {
+  "bandName": "noah",
+  "tanggal": "15-11-2023",
+  "lokasi": "Sukabirus",
+  "hargaTiket": 15000,
+  "namaVokalis" : "Uan"
+}

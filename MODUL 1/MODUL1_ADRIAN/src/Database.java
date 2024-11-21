@@ -5,10 +5,17 @@ public class Database {
     // TODO: Create List of Konser Object to Store Konser from Konser Class
     ArrayList<Konser> konserList = new ArrayList<>();
 
+    ArrayList<String> dataString = new ArrayList<String>();
+
     // TODO: Create Method to insert Konser to Database
     public void addKonser(Konser konser){
         konserList.add(konser);
     }
+
+    public void cobaAdd(int angka){
+        System.out.println(angka);
+    }
+
     // TODO: Create Method to Show Konser from Database
     public void showKonser(){
         for(Konser konser : konserList){
